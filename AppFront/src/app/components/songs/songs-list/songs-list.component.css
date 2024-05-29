@@ -1,0 +1,12 @@
+.songs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.song {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid black;
+}

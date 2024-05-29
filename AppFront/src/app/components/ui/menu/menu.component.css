@@ -1,0 +1,16 @@
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+}
+
+nav ul li {
+    padding: 10px 20px;
+    background-color: lightblue;
+    cursor: pointer;
+}

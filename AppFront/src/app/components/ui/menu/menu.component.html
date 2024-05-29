@@ -1,0 +1,9 @@
+<nav>
+    <ul>
+        <li *ngIf="usersService.isLogged()" [routerLink]="['/songs']">Lista de canciones</li>
+        <li *ngIf="usersService.isLogged()" [routerLink]="['/songs', 'new']">Crea una canción</li>
+        <li *ngIf="!usersService.isLogged()" [routerLink]="['/register']">Registro</li>
+        <li *ngIf="!usersService.isLogged()" [routerLink]="['/login']">Login</li>
+        <li *ngIf="usersService.isLogged()" (click)="onClickLogout()">Logout</li>
+    </ul>
+</nav>

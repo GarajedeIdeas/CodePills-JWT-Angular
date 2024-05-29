@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-12">
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label class="form-label">Título</label>
+                <input type="text" class="form-control" formControlName="title">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Artista</label>
+                <input type="text" class="form-control" formControlName="artist">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Género</label>
+                <input type="text" class="form-control" formControlName="genre">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Álbum</label>
+                <input type="text" class="form-control" formControlName="album">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Duración</label>
+                <input type="number" class="form-control" formControlName="duration">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Año</label>
+                <input type="number" class="form-control" formControlName="year">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Track Nº</label>
+                <input type="number" class="form-control" formControlName="trackNumber">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">¿Explícita?</label>
+                <input type="checkbox" class="form-check" formControlName="isExplicit">
+            </div>
+            <input type="submit" value="Enviar" class="btn btn-info">
+        </form>
+    </div>
+</div>
