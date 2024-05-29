@@ -1,0 +1,52 @@
+GET http://localhost:3000/api/songs
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjQ2YjMxYTVkNWI3NmJlOThiMjQxOTI5IiwidXNlcl9yb2xlIjoicmVndWxhciIsImlhdCI6MTY4NDc5MTEzM30.gZvhekKKbc_kG-vI0Nx1b85W6_K3VgdcrHZkGtp8Y3o
+
+###
+GET http://localhost:3000/api/songs/645ca9173f04d631ec7f33ea
+
+###
+POST http://localhost:3000/api/songs
+Content-Type: application/json
+
+{
+  "title": "Despacito",
+  "artist": "Luis Fonsi",
+  "genre": "Pop",
+  "album": "Vida",
+  "duration": 228,
+  "year": 2017,
+  "trackNumber": 1,
+  "isExplicit": false
+}
+
+###
+PUT http://localhost:3000/api/songs/6465e8ddc8e757ac94d42b0a
+Content-Type: application/json
+
+{
+    "artist": "Jarabe de Palo",
+    "genre": "Pop-Rock",
+    "isExplicit": true
+}
+
+###
+DELETE http://localhost:3000/api/songs/6465e25fe994a7ed0fc096f2
+
+### 
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+  "username": "federico",
+  "email": "fede@gmail.com",
+  "password": "12345"
+}
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+  "email": "fede@gmail.com",
+  "password": "12345"
+}
